@@ -1,0 +1,412 @@
+body {
+	font-family: 'Poppins', sans-serif;
+    color: #6c6c6d;
+}
+
+.content, .intro-bio-section, .navbar, .footer {
+    display: none;
+}
+
+.footer .footer-text {
+	line-height: 50px;
+}
+
+.navbar {
+	background-color: rgba(37,36,37,0.77) !important;
+}
+
+.navbar a {
+    margin: 0px 10px 0px 10px;
+	transition: color 0.2s ease;
+	color: white;
+}
+
+.navbar a:hover {
+	color: #e8e8e8;
+}
+
+.timeline {
+	background-color: rgba(202, 202, 202, 0.38);
+    width: 5px;
+    height: 100%;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.timeline-start-parent {
+    padding-top: 8px;
+}
+
+.timeline-start {
+	background-color: #7e4a80;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    border: 2px solid #d8d8d8;
+}
+
+.section-title {
+	font-family: 'Oswald', sans-serif;	
+	position: relative;
+    width: 260px;
+	margin: auto;
+    margin-bottom: 30px;
+}
+
+.section-title::after {
+    content: " ";
+    height: 5px;
+    width: 20%;
+    display: inline-block;
+    background-color: #7e4a80;
+    border-radius: 20px;
+    position: absolute;
+    top: 74%;    
+    left: 40%;
+}
+
+.navbar-brand, .section-title{	
+	color: #7e4a80;	
+}
+
+.text-company {
+	color: #C09F80;
+}
+
+.intro-bio-section {
+	height: 100vh;
+    background: 
+    url(https://d28qd0hzg413m1.cloudfront.net/images/avi-prof-8.JPG);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover; 
+    max-width: 100%;    
+}
+
+.intro-bio-text-area {
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	padding-top: 40vh; 	
+	width: 350px;
+    margin: auto;
+}
+
+.intro-bio-text-area span {	
+	font-style: italic;
+    font-size: 2rem;
+}
+
+.intro-bio-text-area h1 {
+	font-size: 3.5rem;
+	position: relative;
+}
+
+.intro-bio-text-area h1::before {
+	content: " ";
+    height: 2px;
+    width: 80px;
+    display: inline-block;
+    background-color: white;
+    position: absolute;
+    top: 52%;
+    left: 100%;
+}
+
+.intro-bio-text-area h1::after {
+	content: " ";   
+    height: 2px; 
+    width: 80px;    
+    display: inline-block; 
+    background-color: white;  
+    position: absolute;
+    top: 52%;
+   	right: 100%;
+}
+
+
+.container-wrapper:nth-child(odd) {
+	background: rgba(233,233,233,0.49);
+}
+
+.section-detail p:first-child {
+	font-style: italic;
+}
+
+.job-title {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5rem;
+	position: relative;
+    color: #7e4a80;
+}
+
+.expand-icon, .contract-icon {
+	position: absolute;    
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.expand-icon {
+	display: none;
+}
+
+/*.btn-dark-custom {
+	background-color: #49274a;
+	color: #fff;   
+    border-color: #343a40;	
+}*/
+
+.row {
+    margin-top: 10px;
+}
+
+.nav-link {
+    padding: 10px;    
+    text-align: center;  
+}
+
+.nav-link.active {    
+    background-color: rgba(77,42,78,0.62) !important;
+    transition: 0.2s ease;
+}
+
+.text-secondary {
+    color: #b9b9b9 !important;
+    font-size: 0.9rem;
+}
+
+.fas {
+    font-size: 2rem;
+    color: #7e4a80;
+    margin: 10px;
+}
+
+.interests section div, .projects-area section div {
+    padding: 5px;
+    border: 1px solid rgba(101, 99, 101, 0.169);    
+    min-height: 220px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    background: white;
+    border-bottom: 4px solid #7e4a80;     
+}
+
+.projects-area h4 {
+    color: #49274a;
+}
+
+.projects-area section div {
+    padding: 20px;   
+}
+
+.projects-area img {
+    width: 30px;
+    margin: 10px;
+}
+
+.projects-area .fab {
+    font-size: 2rem;
+}
+
+.projects-area .fab:hover {
+    opacity: 0.8;
+}
+
+.projects-area a {
+    color: black;
+}
+
+.projects-area a:hover {
+    text-decoration: none;    
+}
+
+.proj-img {
+   overflow: hidden; 
+}
+
+.proj-img img {
+    width: 72% !important;
+    border: 3px solid #feaa0a;
+    filter: grayscale();    
+}
+
+.proj-img a img:hover{
+    filter: initial;
+    transform: scale(1.03);
+    transition: 0.7s all !important;
+}
+
+.projects-area .answer-logo {
+    width: 46px;
+}
+
+#blog p a {
+    color: #a554a9;
+}
+
+
+.blogs-all-link {
+    color: white !important;
+    background: #49274a;
+    border: none;
+}
+
+.blogs-all-link a:hover {
+    text-decoration: none;
+}
+
+#all-blog-link:hover { 
+    background: #f49c1a;      
+    opacity: 0.8;
+    transition: 0.5s ease !important;
+}
+
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  left: 48%;
+  top: 49%;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  border-color: #49274a transparent #49274a transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+.fa-chart-bar {
+    font-size: 2.9rem;
+    color: #feaa0a;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    .interests section div {
+        min-height: 220px;
+    }
+
+    #experience figure img{
+        width: 110px;
+    }
+
+    .projects-area section div {
+        min-height: 544px;
+    }
+
+    .navbar {        
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    .interests section div {
+        min-height: 330px;     
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+    .navbar {       
+        font-size: 0.8rem;
+    }
+
+    .interests section div {
+        min-height: 220px;     
+    }
+}
+
+@media only screen and (max-width: 990px) {
+   
+    .interests section div {
+        min-height: 330px;     
+    }
+
+    #experience figure img{
+        width: 110px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .interests section div {
+        min-height: 220px;     
+    }
+
+    .nav-item.nav-link.active {
+        margin: 0;
+    }
+
+    .lds-dual-ring { 
+        left: 44%;
+        top: 40%;
+    }
+
+    .section-title {
+        width: 150px;
+    }
+
+    .intro-bio-section {
+        height: 77vh;
+    }
+
+    .intro-bio-text-area h1 {
+        font-size: 2.5rem;
+        width: 300px;
+        margin: auto;
+    }
+
+    .intro-bio-text-area h1::after {
+        width: 20px;
+    }
+
+    .intro-bio-text-area h1::before {
+        width: 20px;
+    }
+}
+
+#contact p{
+    font-size: 1rem;
+    display: inline-block;
+    margin: 10px;
+    width: 150px;
+    background: #efefef;
+}
+
+#contact a {
+    color: #49274a;
+}
+
+#contact a:hover {
+    text-decoration: none;
+}
+
+#contact .fas, #contact .fab{
+    color: #49274a;
+    margin: 5px;
+    font-size: 2rem;
+}
+
+
