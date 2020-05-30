@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136416298-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-136416298-1');
-	</script>
 
 	<meta charset="UTF-8">
 	<meta http-equip="X-UA-Compatible" content="IE=edge">
@@ -35,7 +26,28 @@
 
 	<div class="lds-dual-ring"></div>		
 	
-	<?php include('header.inc'); ?>
+	<nav class="navbar navbar-dark navbar-expand-sm mb-5 fixed-top p-0">
+		<div class="container">		
+
+			<button class="navbar-toggler" type="button"
+				data-toggle="collapse" data-target="#myTogglerNav" aria-controls="myTogglerNav" 
+				aria-expanded="false" 
+				aria-label="Toggle Navigation">
+					<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="myTogglerNav">
+				<div class="navbar-nav ml-auto">
+					<a class="nav-item nav-link home-link" href="#home">Home</a>
+					<a class="nav-item nav-link" href="#about-me">About Me</a>
+					<a class="nav-item nav-link" href="#blog">Blog</a>	
+					<a class="nav-item nav-link" href="#experience">Experience</a>	
+					<a class="nav-item nav-link" href="#projects">Projects</a>							
+					<a class="nav-item nav-link" href="#contact">Contact</a>					
+				</div>
+			</div>
+		</div>
+	</nav>
 		
 	<div id="home" class="intro-bio-section text-center">
 		<div class="intro-bio-text-area">
@@ -427,7 +439,9 @@
 		</div>
 	</div>
 	<!-- Add Footer -->
-	<?php include('footer.inc'); ?>	
+	<div class="footer bg-dark" style="height: 50px;">
+		<p class="footer-text text-center mb-0 text-light">Developed By Avinash Barik</p>
+	</div>
 	
 	<script src="js/jquery.slim.min.js"></script>
 	<script src="js/jquery.min.js"></script>	
